@@ -1,0 +1,34 @@
+# Project Title
+Customer Behavior Analysis  
+
+## Repository Outline
+1. README.md - Explanation of project standard
+2. description.md - Overview of the project
+3. P2M3_rifqi_asyrafi_ddl.txt - Query for generating table and import data to database
+4. P2M3_rifqi_asyrafi_DAG.py - Notebook for implementing Airflow to extract the data from database (via postgre), clean the data, and push the data to elastic search.
+5. P2M3_rifqi_asyrafi_DAG_graph.png - Image of DAG's process
+6. P2M3_rifqi_asyrafi_raw.csv - Raw dataset
+7. P2M3_rifqi_asyrafi_clean.csv - Clean dataset which is output from DAG
+8. P2M3_rifqi_asyrafi_GX.ipynb - Notebook for setting expectation to validate dataset
+9. images - Folder fulfiled by data visualization
+10. P2M3_rifqi_asyrafi_conceptual.txt - Text for explaining theoritical aspect of this project
+
+## Problem Background
+Knowing our customer is a must for deserving the best products and services. Their activities reflect how they spend they money and what they like. Undoubtedly, by understanding them well, we could gain much interactions to solve their problems and fulfill their need precisely.
+
+## Project Output
+This dashboard is purposed for marketing division to serve information about our customer. By that, we could give more targeted marketing to the most potential customer.
+
+## Data
+Dataset was collected from kaggle (https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis).
+
+## Method
+This analysis implements Airflow for pipelining data process automatically. For data validation, Great Expectation was used for validate data. The last step was visualizing the analysis by Kibana (via Elastic Search)
+
+## Stacks
+1. Python
+2. Airflow
+3. Elastic Search
+4. Kibana
+5. Great Expectation
+6. PostgreSQL

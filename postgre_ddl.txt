@@ -1,0 +1,37 @@
+DROP TABLE IF EXISTS data;
+
+CREATE TABLE data(
+    "ID" INT PRIMARY KEY,
+    "Year_Birth" INT,
+    "Education" VARCHAR(100),
+    "Marital_Status" VARCHAR(100),
+    "Income" NUMERIC(15, 2),
+    "Kidhome" INT,
+    "Teenhome" INT,
+    "Dt_Customer" VARCHAR(15),
+    "Recency" INT,
+    "MntWines" INT,
+    "MntFruits" INT,
+    "MntMeatProducts" INT,
+    "MntFishProducts" INT,
+    "MntSweetProducts" INT,
+    "MntGoldProds" INT,
+    "NumDealsPurchases" INT,
+    "NumWebPurchases" INT,
+    "NumCatalogPurchases" INT,
+    "NumStorePurchases" INT,
+    "NumWebVisitsMonth" INT,
+    "AcceptedCmp3" INT,
+    "AcceptedCmp4" INT,
+    "AcceptedCmp5" INT,
+    "AcceptedCmp1" INT,
+    "AcceptedCmp2" INT,
+    "Complain" INT,
+    "Z_CostContact" INT,
+    "Z_Revenue" INT,
+    "Response" INT
+);
+
+COPY table_m3 ("ID", "Year_Birth", "Education", "Marital_Status", "Income", "Kidhome", "Teenhome", "Dt_Customer", "Recency", "MntWines", "MntFruits", "MntMeatProducts", "MntFishProducts", "MntSweetProducts", "MntGoldProds", "NumDealsPurchases", "NumWebPurchases", "NumCatalogPurchases", "NumStorePurchases", "NumWebVisitsMonth", "AcceptedCmp3", "AcceptedCmp4", "AcceptedCmp5", "AcceptedCmp1", "AcceptedCmp2", "Complain", "Z_CostContact", "Z_Revenue", "Response")
+FROM 'C:\Users\DELL\Portfolio\Customer_Behavior_Analysis\dags\P2M3_rifqi_asyrafi_raw.csv'
+WITH (FORMAT CSV, DELIMITER E'\t', HEADER);

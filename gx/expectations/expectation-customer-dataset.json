@@ -1,0 +1,101 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "expectation-customer-dataset",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "age",
+        "max_value": 100,
+        "min_value": 0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "education",
+        "value_set": [
+          "High School",
+          "Undergraduate",
+          "Master",
+          "PhD"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "income",
+        "type_list": [
+          "float",
+          "integer"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_strftime_format",
+      "kwargs": {
+        "column": "dt_customer",
+        "strftime_format": "%Y-%m-%d"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 28
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "id",
+          "education",
+          "marital_status",
+          "income",
+          "kidhome",
+          "teenhome",
+          "dt_customer",
+          "recency",
+          "mnt_wines",
+          "mnt_fruits",
+          "mnt_meat_products",
+          "mnt_fish_products",
+          "mnt_sweet_products",
+          "mnt_gold_prods",
+          "num_deals_purchases",
+          "num_web_purchases",
+          "num_catalog_purchases",
+          "num_store_purchases",
+          "num_web_visits_month",
+          "accepted_cmp_3",
+          "accepted_cmp_4",
+          "accepted_cmp_5",
+          "accepted_cmp_1",
+          "accepted_cmp_2",
+          "complain",
+          "age",
+          "customer_years",
+          "num_no_deal_purchases"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.19"
+  }
+}
