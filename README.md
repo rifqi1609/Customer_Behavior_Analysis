@@ -1,5 +1,4 @@
-# Project Title
-Customer Behavior Analysis  
+# Customer Behavior Analysis  
 
 ## Repository Outline
 1. README.md -  Overview of the project
